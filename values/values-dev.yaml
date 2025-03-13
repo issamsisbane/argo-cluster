@@ -1,3 +1,5 @@
 template:
   service:
     name: dev
+  config:
+    filePath: config/app-config.yaml
