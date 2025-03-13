@@ -10,4 +10,4 @@ template:
     port: 80
 
 config:
-    filePath: "config/app-config.yaml"
+    filePath: "files/app-config.yaml"
