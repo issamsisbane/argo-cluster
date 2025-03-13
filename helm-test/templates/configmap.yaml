@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Release.Name }}-config
+data:
+  app-config.yaml: |
+    {{- .Files.Get .Values.template.config.filePath  | nindent 4 }}

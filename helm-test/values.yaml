@@ -8,3 +8,6 @@ template:
     name: nginx-test
     type: ClusterIP
     port: 80
+
+config:
+    filePath: "config/app-config.yaml"
