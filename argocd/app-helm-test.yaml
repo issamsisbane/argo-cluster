@@ -14,7 +14,7 @@ spec:
     path: helm-test  # Chemin vers ton chart Helm
     helm:
       valueFiles:
-        - values.yaml  # Utiliser les valeurs par défaut de Helm
+        - ../values/values-dev.yaml  # Utiliser les valeurs par défaut de Helm
   syncPolicy:
     syncOptions:
       - CreateNamespace=true
