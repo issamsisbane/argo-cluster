@@ -2,4 +2,4 @@ template:
   service:
     name: dev
   config:
-    filePath: config/app-config.yaml
+    filePath: "files/app-config.yaml"
