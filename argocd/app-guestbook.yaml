@@ -11,7 +11,7 @@ spec:
   source: 
     path: guestbook
     repoURL: "https://github.com/IssamSisbane/argo-cluster.git"
-    targetRevision: master
+    targetRevision: main
   syncPolicy:
     syncOptions:
       - CreateNamespace=true

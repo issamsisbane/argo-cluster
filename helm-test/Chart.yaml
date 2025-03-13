@@ -1,0 +1,4 @@
+apiVersion: v2
+name: my-app
+version: 0.1.0
+description: Un chart Helm basique pour déployer une application avec un service

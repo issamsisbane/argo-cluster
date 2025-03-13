@@ -1,0 +1,10 @@
+template:
+  replicas: 1
+  image:
+    repository: nginx
+    tag: latest
+    pullPolicy: IfNotPresent
+  service:
+    name: nginx-test
+    type: ClusterIP
+    port: 80

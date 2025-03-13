@@ -1,0 +1,13 @@
+# templates/service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ .Values.template.service.name }}-service
+spec:
+  selector:
+    app: {{ .Values.template.service.name }}
+  ports:
+    - protocol: TCP
+      port: {{ .Values.template.service.port }}
+      targetPort: 80
+  type: {{ .Values.template.service.type }}

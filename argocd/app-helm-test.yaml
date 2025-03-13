@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: helm-test
+  namespace: argocd
+spec:
+  destination:
+    namespace: helm-test
+    server: "https://kubernetes.default.svc"
+  project: default
+  source:
+    repoURL: "https://github.com/IssamSisbane/argo-cluster.git"
+    targetRevision: main
+    path: helm-test  # Chemin vers ton chart Helm
+    helm:
+      valueFiles:
+        - values.yaml  # Utiliser les valeurs par défaut de Helm
+  syncPolicy:
+    syncOptions:
+      - CreateNamespace=true
+      - ApplyOutOfSyncOnly=true
