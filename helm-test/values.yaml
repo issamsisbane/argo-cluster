@@ -9,5 +9,5 @@ template:
     type: ClusterIP
     port: 80
 
-config:
+  config:
     filePath: "files/app-config.yaml"
